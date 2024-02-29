@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Input with Show/Hide Button</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ <style>
+ .password-container {
+  position: relative;
+  margin:0 auto;
+  transform: translatey(40%);
+  width:320px;
+  height:120px;
+  border:0.6px solid rgb(245,218,84);
+  border-radius:20px;
+  box-shadow:10px 10px 5px rgba(170,170,170,0.486) ,inset -4px -4px 5px rgba(170,170,170,0.486) ;
+}
+input {
+  width:70%;
+  height:20px;
+  border:0.5px solid blue;
+  padding:10px;
+  margin:10px 0 0 10px;
+}
+#togglePassword {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  top:16px;
+  font-size:20px;
+}
+h2 {
+  text-align:center;
+}
+ </style>
+</head>
+<body>
+  <h2>show/hide button</h2>
+<div class="password-container">
+  <input type="password" id="password" placeholder="Enter your password">
+  <button id="togglePassword"><i class="fas fa-eye" id="open-eye"></i></button>
+</div>
+<script src="Javascriptwork.js"></script>
+</body>
+</html>
